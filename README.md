@@ -21,7 +21,16 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
-```
+``` 
+var yourGrade = Double(97) ; 
+var classAverage = (grade1 + grade2 + grade 3 + yourGrade) / 4.0 
+if (yourGrade > classAverage) { 
+print("above average") ;  
+else { 
+print("below average"); 
+    }
+
+}
 
 ***
 ## Question 2
@@ -32,7 +41,14 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
-```
+``` 
+if ( number % 2 == 0) { 
+print(" this number is even") ; 
+else { 
+print("this number is odd");
+}
+
+}
 
 ***
 ## Question 3
@@ -44,7 +60,14 @@ var a = 12
 var b = 3
 
 // code here
-```
+``` 
+if (a % 3 == 0) { 
+print("divisible"); 
+else { 
+    print("not divisible")
+}
+
+}
 
 ***
 ## Question 4
@@ -57,7 +80,13 @@ var b = 3
 var c = 2
 
 // your code here
-```
+``` 
+if(a == b || a == c || b== c ) { 
+print("At least two variables have the same value") ; }
+    else { 
+    print("All the values are different");
+}
+
 
 ***
 ## Question 5
@@ -66,10 +95,19 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 
 ```swift
 var baconAge = 6 // the bacon is 6 days old
-var eggsAge = 12 // eggs are 12 days old
+var eggsAge = 25 // eggs are 12 days old
 
-// your code here
-```
+var eggSpoil = 21;
+var baconSpoil = 7;
+if(baconAge < baconSpoil && eggsAge < eggSpoil) {
+print("you can cook bacon and eggs")
+}
+else if baconAge > baconSpoil  || eggsAge < eggSpoil {
+print("throw out bacon, keep eggs" )
+}
+else if (eggsAge > eggSpoil || baconAge >= baconSpoil) {
+print("throw out eggs, keep bacon");
+}
 
 ***
 ## Question 6
@@ -81,7 +119,20 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
-```
+``` 
+let year = 3100
+
+// your code here
+if (year%100 == 0 && year%400 == 0){
+print("Leap year")
+}
+else if (year%100 != 0 && year%400 != 0) {
+print("Not a leap year")
+}
+else {
+print("end of the world!")
+}
+
 
 ***
 ## Question 7
@@ -92,7 +143,13 @@ If you use `random()` it will give you a random number within a specified range.
 let randomNum = Int.random(in: 0...100)
 
 // your code here
-```
+``` 
+if (randomNum%2 == 0){
+print("heads") }
+        else { 
+        print("tails");
+}
+
 
 Hint: use an if/else block along with the `%` operator
 
@@ -108,6 +165,7 @@ var c = 3
 var d = 4
 
 // your code here
-```
 
-***
+var arr = [a, b , c , d] 
+var lowestNum = arr.min(); 
+print(lowestNum ?? 0);
